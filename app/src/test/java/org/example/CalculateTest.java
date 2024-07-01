@@ -12,6 +12,12 @@ public class CalculateTest {
   }
 
   @Test
+  public void testAppReternHelloWorld() {
+    App classUnderTest = new App();
+    assertEquals("Hello World!", classUnderTest.getGreeting());
+  }
+
+  @Test
   public void testsumave() {
     Calculate calculate = new Calculate();
     assertEquals("Sum of 2 and 3 is 5. Average is 2.5.", calculate.sumave(2, 3));
